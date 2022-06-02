@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Noto+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Poppins:ital,wght@0,400;0,500;1,300;1,900&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Roboto+Serif:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Varela+Round&display=swap");
+/* 
+font-family: 'Cinzel', serif; 500
+font-family: 'Poppins', sans-serif; 300i 400 500 900i
+font-family: 'Roboto Mono', monospace; 300 300i 400 400i 500
+font-family: 'Roboto Serif', serif; 300 300i 400 400i 500
+font-family: 'Noto Sans', sans-serif; 300 300i 400 400i 500 500i
+font-family: 'Varela Round', sans-serif;
+*/
+
+body {
+    background-color: white;
+}
+
+.bar {
+    background-color: black;
+    display: block;
+    width: 1.5rem;
+    height: 0.3125rem;
+    margin: 3px;
+}

@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap");
+
+/* 
+font-family: 'Poppins', sans-serif; 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #161719;
+/* background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%); */
+    background-image: url(https://raw.githubusercontent.com/SaifuddinSaifee/Portfolio/master/Projects/Glassomorph/shapesBackground.jpg);
+    /* <!-- https://ibb.co/vQ8DwCx --> */
+
+}
+
+/* 
+115 
+114/g
+126 126/g
+171 171/g
+218
+1021
+*/
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.container .card {
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 50px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.144);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.heading1 {
+    width: 70%;
+    position: absolute;
+    top: 50px;
+    font-size: 30px;
+    color: #92acd4;
+}
+
+.heading2 {
+    position: absolute;
+    width: 70%;
+    top: 115px;
+    font-size: 30px;
+    color: #92acd4;
+}
+
+mark {
+    background-color: aliceblue;
+}
+
+.white {
+    color: #fff;
+    transition: 250ms;
+}
+
+.white:hover {
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.418);
+}
+
+.container .card .content {
+    padding: 100px;
+    text-align: center;
+    transform: translateY(0px); 
+    opacity: 1;
+    transition: 500ms;
+}
+
+.container .card .content:hover {
+    transform: translateY(0px); 
+    opacity: 1;
+}
+
+.container .card .content h2{
+    color: rgba(255, 255, 255, 0.096);
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 9em;
+}
+
+.container .card .content h3 {
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+}
+
+.container .card .content .price {
+    color: greenyellow;
+}
+
+.container .card .content ul {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+
+.container .card .content a {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1140px) {
+    body {
+        padding-top: 200px;
+    }
+}

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+/* 
+font-family: 'Major Mono Display', monospace;
+font-family: 'Poppins', sans-serif;
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1433215735557-911693026827?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    /* Thank you Adam Excell for the image! */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Poppins', sans-serif; 
+    display: flex;
+    flex-direction: column;
+}
+
+.countDownContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+h1 {
+    text-align: center;
+    margin: 8rem;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 3rem;
+}
+
+.timeText {
+    text-align: center;
+    margin: 2rem;
+}
+
+p {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 4rem;
+}
+
+span {
+    font-size: 2.5rem;
+    font-weight: 300;
+}

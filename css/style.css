@@ -1,0 +1,805 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Noto+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Poppins:ital,wght@0,400;0,500;1,300;1,900&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Roboto+Serif:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Varela+Round&display=swap");
+/* 
+font-family: 'Cinzel', serif; 500
+font-family: 'Poppins', sans-serif; 300i 400 500 900i
+font-family: 'Roboto Mono', monospace; 300 300i 400 400i 500
+font-family: 'Roboto Serif', serif; 300 300i 400 400i 500
+font-family: 'Noto Sans', sans-serif; 300 300i 400 400i 500 500i
+font-family: 'Varela Round', sans-serif;
+*/
+
+* {
+    transition: 250ms;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(110, 110, 110);
+}
+
+body {
+    overflow: overlay;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(243, 243, 243, 0.24);
+    /* margin: 0 0 0 0; */
+}
+
+.w80 {
+    width: 80%;
+    margin: auto;
+}
+
+.w66 {
+    width: 66%;
+    margin: auto;
+}
+
+.centre {
+    margin: auto;
+}
+
+.logoImg {
+    width: 120px;
+    margin-top: 45px;
+}
+
+.sec1 {
+    background-image: url(https://raw.githubusercontent.com/SaifuddinSaifee/Portfolio/master/images/cover1080.png);
+    background-size: cover;
+    margin: auto;
+    height: 950px;
+    margin-bottom: 100px;
+}
+
+.themeicon:hover {
+    cursor: pointer;
+    width: 53px;
+}
+
+.myName {
+    text-align: left;
+    font-size: 5.625rem;
+    color: rgb(160, 160, 160);
+    font-family: "Cinzel", serif;
+}
+
+.name {
+    color: rgb(0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.mydatasec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myinfo {
+    border-top: 4px solid #ffb900b3;
+    border-right: 2px solid #ffbb0000;
+    border-left: 2px solid #ffbb0000;
+    border-bottom: 2px solid #ffbb0000;
+    box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px, rgb(0 0 0 / 4%) 0px 10px 10px;
+    width: 300px;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px 50px 150px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myinfo:hover {
+    transition: 750ms;
+    border-top: 4px solid #ffb900b3;
+    border-right: 2px solid #ffb900b3;
+    border-left: 2px solid #ffb900b3;
+    border-bottom: 2px solid #ffb900b3;
+}
+
+.infoText {
+    margin: 50px 20px auto 20px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.hiiImage {
+    /* visibility: hidden; */
+    width: inherit;
+    border-radius: 0 0 300px 300px;
+    position: relative;
+}
+
+.sec2 {
+    /* padding-top: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrk-header {
+    margin: 0;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: rgba(0, 128, 255, 0.203);
+}
+
+.projectCards {
+    background-color: white;
+    padding: 20px;
+    cursor: pointer;
+    margin: 100px auto;
+    width: 850px;
+    height: 357px;
+    border-radius: 30px;
+    /* border: 2px solid red; */
+    box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px, rgb(0 0 0 / 4%) 0px 10px 10px;
+}
+
+.projectCards:hover {
+    box-shadow: rgb(0 0 0 / 15%) 0px 20px 50px, rgb(0 0 0 / 6%) 0px 10px 20px;
+}
+
+.projimg {
+    height: inherit;
+    border-radius: inherit;
+    float: left;
+    margin-right: 20px;
+}
+
+.projDescHead {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.375rem;
+    color: rgb(73, 73, 73);
+}
+
+.projInfo {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+}
+
+.temp {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 200;
+    color: #888;
+}
+
+.devopsBlogImg {
+    width: inherit;
+    border-radius: inherit;
+}
+
+.navpill {
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 60px;
+    width: inherit;
+    height: inherit;
+    border-radius: 33px;
+    background-color: #ffb2a8c8;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px, rgb(0 0 0 / 4%) 0px 10px 10px;
+}
+
+.navpillcontent {
+    cursor: pointer;
+    background-color: transparent;
+    padding: 10px 30px;
+    font-size: 1.75rem;
+    display: inline-block;
+    font-style: bold;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: rgb(109, 109, 109);
+    border: 3px solid transparent;
+    border-radius: 34px;
+}
+
+.navpillcontent:hover {
+    background-color: white;
+    color: black;
+}
+
+.mobile-icon {
+    display: none;
+}
+
+.linksBar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    margin: 50px auto;
+    padding: 10px;
+    width: 40%;
+    border-radius: 25px;
+    border: 5px solid #aed6dc;
+    background-color: #4a536b;
+}
+
+.fa-brands {
+    font-size: 2rem;
+    color: white;
+    font-weight: 400px;
+    padding: 10px;
+}
+
+.fa-brands:hover {
+    border-radius: 8px;
+    background-color: #aed6dc7b;
+}
+
+.contactform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    padding: 40px;
+    width: 50%;
+    border-radius: 40px;
+    background-color: #ffffff;
+    border: 4px solid #aed6dc;
+}
+
+.mailDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mailBox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-radius: 29px;
+    -webkit-box-shadow: 0px 0px 25px 5px rgba(128, 128, 128, 0.34);
+    box-shadow: 0px 0px 25px 5px rgba(128, 128, 128, 0.34);
+}
+
+.gmail:hover {
+    background-color: #f04e1fb3;
+}
+
+.outlook:hover {
+    background-color: #00a2edb3;
+}
+
+.phone:hover {
+    background-color: #7fba00b3;
+}
+
+.CV:hover {
+    background-color: #ffb900b3;
+}
+
+.fa-envelope {
+    font-size: 2rem;
+}
+
+text {
+    margin: 10px;
+    font-size: 1.125rem;
+    font-family: "Varela Round", sans-serif;
+}
+
+/* ## */
+/* ## */
+/* ## */
+/* ## */
+/* ## */
+/* ## */
+/* ## */
+/* ## */
+/* ## */
+/* ## */
+/* ## */
+
+@media only screen and (max-width: 1300px) {
+    body {
+        overflow: overlay;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(243, 243, 243, 0.24);
+        /* margin: 0 0 0 0; */
+    }
+
+    .logoImg {
+        width: 100px;
+    }
+
+    .wrk-header {
+        margin: 0;
+        text-align: left;
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 7.5vh;
+        color: rgba(0, 128, 255, 0.203);
+    }
+
+    .navpillcontent {
+        padding: 10px 30px;
+        font-size: 21px;
+    }
+
+    .navpillcontent:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .centre {
+        margin: auto;
+    }
+
+    .sec1 {
+        background-image: url(https://raw.githubusercontent.com/SaifuddinSaifee/Portfolio/master/images/cover720.png);
+        background-size: cover;
+        margin: auto;
+        height: 712px;
+        margin-bottom: 75px;
+    }
+
+    .sec2 {
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .myName {
+        text-align: left;
+        font-size: 4.188rem;
+        color: rgb(160, 160, 160);
+        font-family: "Cinzel", serif;
+    }
+
+    .name {
+        color: rgb(0, 0, 0);
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    h3 {
+        text-shadow: 2px;
+        font-family: "Roboto Mono", monospace;
+        font-size: 18.75px;
+        text-align: center;
+        color: black;
+        /* color: #47c3c1; */
+    }
+
+    .projectCards {
+        background-color: white;
+        padding: 20px;
+        cursor: pointer;
+        margin: 75px auto;
+        width: 637.5px;
+        height: 267.75px;
+        border-radius: 30px;
+    }
+
+    .projimg {
+        height: inherit;
+        border-radius: inherit;
+        float: left;
+        margin-right: 20px;
+    }
+
+    .projDescHead {
+        font-family: "Poppins", sans-serif;
+        font-size: 22px;
+        color: rgb(73, 73, 73);
+    }
+
+    .projInfo {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+    }
+
+    .devopsBlogImg {
+        width: inherit;
+        border-radius: inherit;
+    }
+
+    .temp {
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        font-weight: 200;
+        color: #888;
+    }
+
+    .linksBar {
+        margin: 37.5px auto;
+        padding: 7.5px;
+        border-radius: 18.75px;
+    }
+    .fa-brands {
+        font-size: 24px;
+        color: white;
+        font-weight: 400px;
+        padding: 7.5px;
+    }
+
+    .fa-brands:hover {
+        border-radius: 8px;
+        background-color: #aed6dc7b;
+    }
+
+    .myinfo {
+        width: 225px;
+        border-radius: 37.5px 37.5px 112.5px 112.5px;
+    }
+
+    .infoText {
+        margin: 37.5px 15px auto 15px;
+        font-size: 12px;
+    }
+
+    .hiiImage {
+        border-radius: 0 0 225px 225px;
+    }
+
+    .mailBox {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 15px;
+        width: fit-content;
+        height: fit-content;
+        padding: 7.5px 15px;
+        background-color: #ffffff;
+        border-radius: 21.75px;
+        -webkit-box-shadow: 0px 0px 25px 5px rgba(128, 128, 128, 0.34);
+        box-shadow: 0px 0px 25px 5px rgba(128, 128, 128, 0.34);
+    }
+
+    .gmail:hover {
+        background-color: #ff9eaed1;
+    }
+
+    .outlook:hover {
+        background-color: #00a2edb3;
+    }
+
+    .fa-envelope {
+        font-size: 22.5px;
+    }
+
+    text {
+        margin: 7.5px;
+        font-size: 13.5px;
+        font-family: "Varela Round", sans-serif;
+    }
+}
+
+/* # */
+/* # */
+/* # */
+/* # */
+/* # */
+/* # */
+/* # */
+/* # */
+/* # */
+/* # */
+/* # */
+
+@media only screen and (max-width: 970px) {
+    /* tablet view */
+
+    .sec1 .w80 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+
+    .sec1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .logoImg {
+        padding-top: 200px;
+        width: 150px;
+    }
+
+    .myName {
+        text-align: center;
+        font-size: 3.188rem;
+        padding-top: 50px;
+    }
+
+    .projectCards {
+        background-color: white;
+        padding: 20px;
+        cursor: pointer;
+        margin: 75px auto;
+        /* width: 637.5px; */
+        width: auto;
+        height: auto;
+        border-radius: 30px;
+        /* border: 2px solid red; */
+    }
+
+    .projimg {
+        width: 100%;
+        border-radius: inherit;
+        float: none;
+        margin-right: 20px;
+    }
+
+    .wrk-header {
+        margin: 0;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 5vh;
+        color: rgba(0, 128, 255, 0.203);
+    }
+
+    .projDescHead {
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        color: rgb(73, 73, 73);
+    }
+
+    .projInfo {
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+    }
+
+    .devopsBlogImg {
+        width: 100%;
+        border-radius: inherit;
+    }
+
+    .navpill {
+        width: 65%;
+        padding: 10px;
+    }
+    .navpillcontent {
+        padding: 7px 16px;
+        font-size: 20px;
+    }
+
+    .navpillcontent:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .linksBar {
+        width: max-content;
+        margin: 37.5px auto;
+        padding: 7.5px;
+        border-radius: 18.75px;
+    }
+    .fa-brands {
+        font-size: 24px;
+        color: white;
+        font-weight: 400px;
+        padding: 7.5px;
+        margin: auto 8px;
+    }
+
+    .fa-brands:hover {
+        border-radius: 8px;
+        background-color: #aed6dc7b;
+    }
+
+    .mydatasec {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .myinfo {
+        box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px,
+            rgb(0 0 0 / 4%) 0px 10px 10px;
+        width: 300px;
+        height: fit-content;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50px 50px 150px 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .infoText {
+        margin: 50px 20px auto 20px;
+        font-family: "Noto Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        font-style: italic;
+    }
+
+    .hiiImage {
+        /* visibility: hidden; */
+        width: inherit;
+        border-radius: 0 0 300px 300px;
+        position: relative;
+    }
+
+    .mailDetails {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    /* smartphone view */
+
+    body {
+        padding-bottom: 100px;
+    }
+
+    .logoImg {
+        padding-top: 0;
+        width: 150px;
+    }
+
+    .projectCards {
+        background-color: white;
+        padding: 16px;
+        cursor: pointer;
+        margin: 75px auto;
+        /* width: 637.5px; */
+        width: auto;
+        height: auto;
+        border-radius: 16px; /* 64 */
+        /* border: 2px solid red; */
+    }
+
+    .navpill {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+        top: auto;
+        bottom: 1.75%;
+        width: 90%;
+        height: inherit;
+        border-radius: 38px;
+        background-color: #ffb2a8;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px;
+    }
+
+    .navpillcontent {
+        padding: 7px 10px;
+        font-size: 20px;
+        font-weight: 500;
+        display: none;
+    }
+
+    .navpillcontent:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .mobile-icon {
+        display: inline;
+    }
+
+    .fa-igloo,
+    .fa-briefcase,
+    .fa-phone {
+        font-size: 20px;
+        padding: 16px;
+        border-radius: 50%;
+        background-color: white;
+        color: black;
+        border: 3px solid#ffb2a8;
+    }
+
+    .linksBar {
+        width: max-content;
+        margin: 37.5px auto;
+        padding: 7.5px;
+        border-radius: 25px;
+    }
+    .fa-brands {
+        font-size: 24px;
+        color: white;
+        font-weight: 400px;
+        padding: 7.5px;
+        margin: auto 8px;
+    }
+
+    .fa-brands:hover {
+        border-radius: 8px;
+        background-color: #aed6dc7b;
+    }
+
+    .myinfo {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .navpillcontent {
+        padding: 10px 7.5px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .projectCards {
+        background-color: white;
+        padding: 12px;
+        cursor: pointer;
+        margin: 75px auto;
+        /* width: 637.5px; */
+        width: auto;
+        height: auto;
+        border-radius: 30px;
+        /* border: 2px solid red; */
+    }
+
+    .fa-igloo,
+    .fa-briefcase,
+    .fa-phone {
+        font-size: 0.75rem;
+    }
+}

@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Varela+Round&display=swap");
+/* 
+font-family: 'Poppins', sans-serif;
+font-family: 'Varela Round', sans-serif; 
+*/
+* {
+    transition: 450ms;
+}
+
+body {
+    background-color: aliceblue;
+    margin: 0;
+}
+
+.navbar {
+    font-family: "Varela Round", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    height: 5rem;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.titleBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav-div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: fit-content;
+    max-width: 800px;
+}
+
+.nav-div a {
+    font-size: 1.5rem;
+    margin: 10px 30px;
+    text-decoration: none;
+}
+
+.imgLogo {
+    height: 5rem;
+}
+
+main {
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+}
+
+.colorField {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    width: 400px;
+    padding: 1rem;
+    border-radius: 2.375rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    background-color: white;
+    border: 2px solid rgba(255, 0, 0, 0);
+    border-radius: 31px;
+    width: fit-content;
+    height: max-content;
+}
+
+.btn:hover {
+    cursor: pointer;
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.color {
+    /* font-style: italic; */
+    font-size: 1.25rem;
+    padding: 0 1rem;
+    margin: 0;
+    font-weight: 400;
+    width: max-content;
+    text-align: center;
+    color: aliceblue;
+}
+
+p {
+    padding: 30px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+

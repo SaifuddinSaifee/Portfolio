@@ -1,0 +1,23 @@
+
+.navbar {
+    border: 2px solid aqua;
+    background-color: aqua;
+    width: 420px;
+    border-radius: 60px;
+}
+
+p {
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    padding: 20px 20px;
+    border-radius: 34px;
+    background-color:aqua;
+}
+
+p:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #1b31bb;
+  
+}
