@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+}
+
+.hero-sec {
+    height: 100vh;
+    width: 100%;
+    background-color: #dee9ed;
+}

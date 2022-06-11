@@ -714,16 +714,16 @@ text {
         align-items: center;
         position: fixed;
         top: auto;
-        bottom: 1.75%;
+        bottom: 2%;
         width: 90%;
-        height: inherit;
+        height: 32px;
         border-radius: 38px;
         background-color: #ffb2a8;
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
         left: 50%;
         transform: translateX(-50%);
-        padding: 10px;
+        padding: 5px;
     }
 
     .navpillcontent {

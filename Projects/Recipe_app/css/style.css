@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* 
+font-family: 'Lobster Two', cursive;
+*/
+
+* {
+    margin: 0;
+    transition: 250ms;
+}
+
+.log-img {
+    position: absolute;
+    top: 4.5%;
+}
+
+.hero-sec {
+    height: 100vh;
+    background-image: url(/images/Bg_Image.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-data {
+    width: 85%;
+    height: 100%;
+}
+
+.hero-data h1 {
+    font-family: "Lobster Two", cursive;
+    font-weight: 500;
+    font-size: 3.5rem;
+    width: 32%;
+    color: #1b8845;
+    text-align: left;
+    position: absolute;
+    top: 40%;
+    transform: translate(0, -50%);
+}
+
+.hero-tag {
+    text-align: left;
+    position: absolute;
+    top: 55%;
+    transform: translate(0, -50%);
+    font-weight: 400;
+    font-size: 1.8rem;
+    width: 40%;
+    color: #1b8845;
+}
+
+.hero-data button {
+    color: white;
+    background-color: #ed6f71;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.75rem 2rem;
+    text-align: left;
+    position: absolute;
+    top: 68%;
+    transform: translate(0, -50%);
+    border-radius: 10px;
+    border: none;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.hero-data button:hover {
+    background-color: #d7696b;
+}
+
+.footer {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    font-weight: 700;
+    position: absolute;
+    bottom: 1.5%;
+    color: #fd7a3f;
+    font-size: 1rem;
+}
