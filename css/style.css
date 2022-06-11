@@ -327,6 +327,11 @@ text {
     font-family: "Varela Round", sans-serif;
 }
 
+.sec3 h3 {
+    font-size: 32px;
+    text-align: center;
+}
+
 /* ## */
 /* ## */
 /* ## */
@@ -714,7 +719,7 @@ text {
         align-items: center;
         position: fixed;
         top: auto;
-        bottom: 2%;
+        bottom: 4%;
         width: 90%;
         height: 6vw;
         border-radius: 38px;
@@ -760,7 +765,7 @@ text {
         border-radius: 25px;
     }
     .fa-brands {
-        font-size: 1.5vw;
+        font-size: 26px;
         color: white;
         font-weight: 400px;
         padding: 7.5px;
