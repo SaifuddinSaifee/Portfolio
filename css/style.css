@@ -716,7 +716,7 @@ text {
         top: auto;
         bottom: 2%;
         width: 90%;
-        height: 32px;
+        height: 6vw;
         border-radius: 38px;
         background-color: #ffb2a8;
         backdrop-filter: blur(5px);
@@ -745,7 +745,7 @@ text {
     .fa-igloo,
     .fa-briefcase,
     .fa-phone {
-        font-size: 20px;
+        font-size: 4.5vw;
         padding: 16px;
         border-radius: 50%;
         background-color: white;
@@ -760,7 +760,7 @@ text {
         border-radius: 25px;
     }
     .fa-brands {
-        font-size: 24px;
+        font-size: 1.5vw;
         color: white;
         font-weight: 400px;
         padding: 7.5px;
